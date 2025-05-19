@@ -3,11 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Don't forget to connect the CSS file -->
+  <link rel="stylesheet" href="./style.css" />
   <title>Library</title>
 </head>
 <body>
-  <h1>Library</h1>
-  <!-- Don't forget to connect the JavaScript file -->
+  <main>
+    <header class="header">
+      <h1> Page Turner Club</h1>
+      <h2>A world full of books</h2>
+    </header>
+
+    <section class="hero-section">
+      <p>Always struggeling with finding that next page turner book for those rainy automn evenings or the sunny summer days on the beach? <br> Page turner club has collected the biggest works that you safely always can fall back to.</p>
+    </section>
+
+    <div class="button">
+      <button id="random-button" class="random-button-style">PICK MY BOOK</button>
+    </div>
+    
+    <section class="filter-section">
+      <!--section for filter choises-->
+      <fieldset class="filter-buttons">
+        <legend>Search for your favorite genre</legend>
+        <input
+          type="radio"
+          name="genre"
+          id="all-button"
+          value="all"
+          checked
+        >
+        <label
+          for="all-button"
+          class="filter-button-style"
+          >All</label>
+
+        <input
+          type="radio"
+          name="genre"
+          id="fiction-button"
+          value="fiction"
+        >
+        <label
+          for="fiction-button"
+          class="filter-button-style"
+          >Fiction</label>
+
+        <input
+          type="radio"
+          name="genre"
+          id="sciencefiction-button"
+          value="science fiction"
+        >
+        <label
+          for="sciencefiction-button"
+          class="filter-button-style"
+          >Science Fiction</label>  
+        
+        <input
+          type="radio"
+          name="genre"
+          id="fantasy-button"
+          value="fantasy"
+        >
+        <label
+          for="fantasy-button"
+          class="filter-button-style"
+          >Fantasy</label> 
+
+        <input
+          type="radio"
+          name="genre"
+          id="mystery-button"
+          value="mystery"
+        >
+        <label
+          for="mystery-button"
+          class="filter-button-style"
+          >Mystery</label>
+
+        <input
+          type="radio"
+          name="genre"
+          id="dystopian-button"
+          value="dystopian"
+        >
+        <label
+          for="dystopian-button"
+          class="filter-button-style"
+          >Dystopian</label>
+      </fieldset>
+
+      <!--Section for sort choises-->
+      <fieldset class="sort-buttons">
+        <legend>How does that rating look</legend>
+        <input
+        type="radio"
+        name="rating"
+        id="highrate-button"
+        value="rating"
+        
+        >
+        <label
+        for="highrate-button"
+        class="sort-button-style"
+        >Highest rating</label>
+
+        <input
+        type="radio"
+        name="rating"
+        id="lowrate-button"
+        value="rating"
+        
+        >
+        <label
+        for="lowrate-button"
+        class="sort-button-style"
+        >Lowest rating</label>
+      </fieldset>
+   </section>
+
+    <!--empty container with id to access the JS array-->
+    <section id="library"></section>
+
+
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
